@@ -38,7 +38,7 @@ gulp.task('HTML', function() {
 });
 
 gulp.task('styles', function () {
-  return gulp.src('dev/**/*.less')
+  return gulp.src('dev/**/*.css')
 	.on('error', console.log)
 	.pipe(sourcemaps.init())
 	.pipe(autoprefixer({ browsers: ['>1%'] }))
@@ -50,7 +50,7 @@ gulp.task('styles', function () {
 gulp.task ('watch', function(){
 	gulp.watch('dev/**/*.html', ['HTML']);
 	gulp.watch('dev/img/*', ['images']);
-	gulp.watch('dev/**/*.css', ['styles']);
+	gulp.watch('dev/**/*.caa', ['styles']);
 });
 
 gulp.task ('default', ['HTML', 'styles', 'browserSync', 'watch']);

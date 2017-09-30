@@ -16,7 +16,7 @@ a:hover {
   color: #0499c5;
 }
 body {
-  background: grey url('img/background.jpg') no-repeat center center fixed;
+  background: grey url() no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
