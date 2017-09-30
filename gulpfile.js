@@ -50,7 +50,7 @@ gulp.task('styles', function () {
 gulp.task ('watch', function(){
 	gulp.watch('dev/**/*.html', ['HTML']);
 	gulp.watch('dev/img/*', ['images']);
-	gulp.watch('dev/**/*.caa', ['styles']);
+	gulp.watch('dev/**/*.css', ['styles']);
 });
 
 gulp.task ('default', ['HTML', 'styles', 'browserSync', 'watch']);
